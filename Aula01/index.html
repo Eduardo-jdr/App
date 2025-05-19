@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #ff0000;
+            text-shadow: 3px 3px 5px #ff0000;
+        }
+        h2{
+            background-color: dimgray;
+        }
+        
+        body{
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black; 
+        }
+        img{
+            width: 100%;
+            height: auto;
+            
+        
+        }
+      
+        iframe{
+            width: 100%;
+            height: 300px;
+            
+        }
+        h4{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            
+        }
+        .container{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border: 2px solid #730000;
+            border-radius: 20px;
+            box-shadow: rgba(255, 0, 0, 0.603) 0px 5px 15px;
+            background-color: #730000;
+        }
+        .container input{
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        button, select{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+        }
+        select{
+            margin-top: -1px;
+        }
+
+        button{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+        }
+        h3{
+            width: 100%;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>PSICOL FILMES</h1>
+    <br>
+    <h2 style="color: white;">Coringa Delírio a Dois</h2>
+    <br>
+    <p style="color: whitesmoke;">O comediante fracassado Arthur Fleck conhece o amor de sua vida, 
+    Harley Quinn, enquanto está encarcerado no Arkham State Hospital. Os dois embarcam em uma desventura romântica condenada.</p>
+    <br>
+    
+   <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2024/04/gkldmr0xsauuok7__452af24-760x950.jpeg" alt="Coringa 2"> 
+    <br>
+    
+    <iframe src="https://www.youtube.com/embed/exeVIM3j3y0?si=0Y2ZxqmD1Lmc_LbU" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br><br>
+    <h4 style="color: #ffffff;">Formulário</h4>
+    <div class="container">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" placeholder="Insira seu nome">
+        <label for="lname">Sobrenome:</label>
+        <input type="text" id="lname" placeholder="Insira seu sobrenome">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" placeholder="Insira sua idade">
+        <label for="cities">Cidade:</label>
+        <select id="cities">
+            <option value="Curitiba">Curitiba</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Florianópolis">Florianópolis</option>
+            <option value="Rio Branco">Rio Branco</option>
+        </select>
+        <button onclick="enviar()">Enviar texto completo</button>
+    </div>
+    <br>
+    <h3 id="print"></h3>
+    <br><br><br>
+    <script>
+        function enviar(){
+            var first = document.getElementById("fname").value
+            var last = document.getElementById("lname").value
+            var age = document.getElementById("age").value
+            var city = document.getElementById("cities").value
+            var print = document.getElementById("print")
+            //concatenação de strings (primeira maneira)
+            //print.textContent = first + " " + last
+            //template string
+            print.textContent = `Meu nome é ${first} ${last}, tenho ${age} anos de idade e moro em ${city}.`
+        }
+        
+    </script>
+</body>
+</html>
