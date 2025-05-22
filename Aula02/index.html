@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
@@ -21,6 +20,8 @@
               <a class="nav-link" href="#section1">Apresentação</a>
               <a class="nav-link" href="#section2">Projetos</a>
               <a class="nav-link" href="#section3">Serviços</a>
+              <a class="nav-link" href="./contato.html">Contato</a>
+
             </div>
           </div>
         </div>
@@ -39,9 +40,9 @@
         <section id="section2">
             <h2>Projetos</h2>
             <div class="wrap-acc">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
+    <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Projeto Orfanato em React
       </button>
@@ -52,7 +53,7 @@
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
+    <h2 class="accordion-header" id="flush-headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         Rick and Morty API
       </button>
@@ -64,7 +65,7 @@
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
+    <h2 class="accordion-header" id="flush-headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Spacetime mobile
       </button>
@@ -76,11 +77,36 @@
     </div>
   </div>
 </div>
+  </section>
+  <section id="section3">
+    <h2>Serviços</h2>
+    <div class="wrap-cards">
+                <div class="card mb-3">
+                    <img src="./images/f1.jfif" class="card-img-top" alt="Foto iguana 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <img src="./images/f2.jfif" class="card-img-top" alt="Foto iguana 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <img src="./images/f3.jfif" class="card-img-top" alt="Foto iguana 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
             </div>
-        </section>
-        <section id="section3">
-            <h2>Serviços</h2>
-        </section>
+      </section>
       </main>
       <footer>
         <a href="https://github.com/Eduardo-jdr" target="_blank"><img class="img-logo" src="imagens/github.png" alt="GitHub logo"></a>
